@@ -1,129 +1,200 @@
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Push уведомления</title>
-</head>
-<body>
-	<input type="button" onclick="notifSet ()" value="Notification">
-	
-<script>
-	function notifyMe () {
-		var notification = new Notification ("Все еще работаешь?", {
-			tag : "ache-mail",
-			body : "Пора сделать паузу и отдохнуть",
-			icon : "https://itproger.com/img/notify.png"
-		});
-	}
-	
-	function notifSet () {
-		if (!("Notification" in window))
-			alert ("Ваш браузер не поддерживает уведомления.");
-		else if (Notification.permission === "granted")
-			setTimeout(notifyMe, 2000);
-		else if (Notification.permission !== "denied") {
-			Notification.requestPermission (function (permission) {
-				if (!('permission' in Notification))
-					Notification.permission = permission;
-				if (permission === "granted")
-					setTimeout(notifyMe, 2000);
-			});
-		}
-	}
-</script>
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тафсири осонбаён</title>
-
-    <style rel="stylesheet">
-*{
-    padding: 0;
-    margin: 0;
-}
-.container{
-    padding: 0;
-    margin: 0;
-}
-.head{
-    width: 100%;
-    height: 100%;
-    background: #000;
-    color: aliceblue;
-    font-size: 20px;
-    text-align: center;
-}
-
-.audio{
-    width: 90%;
-    padding: 3px;
-    margin-top: 5px;
-    margin-left: 5%;
-
-    border: 1px solid black;
-    border-radius: 2px;
-}
-
-.audio .title{
-    text-align: center;
-
-}
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <div class="head">
-            <h1>Тафсири осонбаён</h1>
+
+            <h1> <a href="index.html" style="margin-left:0px; ">&larr;</a>Тафсири осонбаён</h1>
         </div>
-        
+
 
         <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="./Адолати_парвардигор.m4a" controls></audio>
-            
+            <li>
+                <div class="audio-player">
+                    <div class="track-title">Facts</div>
+                    <div id="seekObjContainer">
+                        <div id="timeline1">
+                            <div id="seekObj1" class="playhead" style="margin-left: 0px;"></div>
+                        </div>
+                    </div>
+                    <div class="player-controls scrubber">
+                        <small class="start-time"></small>
+                      <div class="play-pause">►</div>
+                        <small class="end-time"></small>
+                    </div>
+                    <div class="audio-wrapper">
+                        <audio id="player2" preload="auto">
+                        <source src="new-min.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+            </li>
+        </div>
+        <li class="music">
+            <div class="podcast">
+                <div class="img-episodes-container">
+                    <img  src="https://i.stack.imgur.com/acGnL.png" alt="microfono">
+                </div>
+        
+                <h4>Lorem, ipsum dolor.</h4>
+        
+                <audio controls>
+                    <source src="new-min2.mp3">
+                </audio>
+            </div>
+        </li>
+
+        <div class="audio">
+            <h4 class="title">Аз_ҳад_гузаштагон</h4>
+            <audio src="tafsir/Аз_ҳад_гузаштагон.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Аз_ҳиҷрат_боз_мондагон</h4>
+            <audio src="tafsir/Аз_ҳиҷрат_боз_мондагон.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Азамату_қудрати_парвардигор</h4>
+            <audio src="tafsir/Азамату_қудрати_парвардигор.m4a" controls></audio>
+        </div>
+
+
+        <div class="audio">
+            <h4 class="title">Азоби_мунофиқон</h4>
+            <audio src="tafsir/Азоби_мунофиқон.m4a" controls></audio>
+        </div>
+
+
+        <div class="audio">
+            <h4 class="title">Азоби_умати_мусо</h4>
+            <audio src="tafsir/Азоби_умати_мусо.m4a" controls></audio>
+        </div>
+
+
+        <div class="audio">
+            <h4 class="title">Амал_ва_подош</h4>
+            <audio src="tafsir/Амал_ва_подош.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Амали_зишт_ва_амр</h4>
+            <audio src="tafsir/Амали_зишт_ва_амр.m4a" controls></audio>
         </div>
         <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="./Аз_ҳад_гузаштагон.m4a" controls></audio>
+            <h4 class="title">Амали_зоеъ_шуда</h4>
+            <audio src="tafsir/Амали_зоеъ_шуда.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Амали_ҳабата</h4>
+            <audio src="tafsir/Амали_ҳабата.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Амонат_диҳии_шаръи</h4>
+            <audio src="tafsir/Амонат_диҳии_шаръи.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Амонати_парвардигор</h4>
+            <audio src="tafsir/Амонати_парвардигор.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Асири_ғафлат</h4>
+            <audio src="tafsir/Асири_ғафлат.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Асирони_ғозои_бадр</h4>
+            <audio src="tafsir/Асирони_ғозои_бадр.m4a" controls></audio>
+        </div>
+
+
+        <div class="audio">
+            <h4 class="title">Асо_ва_фиръавн</h4>
+            <audio src="tafsir/Асо_ва_фиръавн.m4a" controls></audio>
+        </div>
+
+
+        <div class="audio">
+            <h4 class="title">Асҳоби_каҳф</h4>
+            <audio src="tafsir/Асҳоби_каҳф.m4a" controls></audio>
+        </div>
+
+        <div class="audio">
+            <h4 class="title">Аҳамияти_намоз</h4>
+            <audio src="tafsir/Аҳамияти_намоз.m4a" controls></audio>
         </div>
         <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="./sourse/Аз_ҳиҷрат_боз_мондагон..m4a" controls></audio>
+            <h4 class="title">Аҳднома_ва_хиёнат</h4>
+            <audio src="tafsir/Аҳднома_ва_хиёнат.m4a" controls></audio>
         </div>
         <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="./Азамату_қудрати_парвардигор.m4a" controls></audio>
+            <h4 class="title">Аҳли_мантиқ</h4>
+            <audio src="tafsir/Аҳли_мантиқ.m4a" controls></audio>
         </div>
-        <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="" controls></audio>
-        </div>
-        <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="" controls></audio>
-        </div>
-        <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="" controls></audio>
-        </div>
-        <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="" controls></audio>
-        </div>
-        <div class="audio">
-            <h4 class="title">qismi 1</h4>
-            <audio src="" controls></audio>
-        </div>
+
+            <ul class="navigation">
+                <li><a href="index.html"><<<</a></li>
+                <li><a href="index.html"><</a></li>
+                <li><a href="">А</a></li>
+                <li><a href="">Б</a></li>
+                <li><a href="">В</a></li>
+                <li><a href="">Г</a></li>
+                <li><a href="">Д</a></li>
+                <li><a href="">Е</a></li>
+                <li><a href="">З</a></li>
+                <li><a href="">И</a></li>
+                <li><a href="">К</a></li>
+                <li><a href="">Л</a></li>
+                <li><a href="">М</a></li>
+                <li><a href="">Н</a></li>
+                <li><a href="">О</a></li>
+                <li><a href="">П</a></li>
+                <li><a href="">Р</a></li>
+                <li><a href="">С</a></li>
+                <li><a href="">Т</a></li>
+                <li><a href="">У</a></li>
+                <li><a href="">Ф</a></li>
+                <li><a href="">Х</a></li>
+                <li><a href="">Ч</a></li>
+                <li><a href="">Э</a></li>
+                <li><a href="">></a></li>
+                <li><a href="#">>>></a></li>
+            </ul>
+
+
+
+
+
+
+
     </div>
 </body>
 
-<script>
-    document.write('script working!!!');
-</script>
+
+
 </html>

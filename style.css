@@ -3,11 +3,14 @@
     margin: 0;
 }
 
-  /*панел аудио*/
 
+audio {
+     background-color: rgb(230,230,230);}
+}
+  /*панел аудио*/
 audio::-webkit-media-controls-panel {
-    background-color: #ffff;
-  }
+    background-color: rgb(230,230,230);}
+  
   /*кнопка громкость*/
 
   audio::-webkit-media-controls-mute-button{

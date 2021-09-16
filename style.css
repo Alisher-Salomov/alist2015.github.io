@@ -28,9 +28,9 @@ audio::-webkit-media-controls-panel {
   /**/
   audio::-webkit-media-controls-timeline-container{display: none;}
   /*time вакти асли*/
-  audio::-webkit-media-controls-current-time-display{background-color: rgb(230, 230, 230);}
+  audio::-webkit-media-controls-current-time-display{background-color: rgb(230, 230, 230); padding:0 5px 0 5px;}
   /*time вакти умуми*/
-  audio::-webkit-media-controls-time-remaining-display{background-color: rgb(230,230,230);}
+  audio::-webkit-media-controls-time-remaining-display{background-color: rgb(230,230,230); padding:0 5px 0 5px;}
   /*панели звук стрелкаи мерафтаги*/
   audio::-webkit-media-controls-timeline{background-color: rgb(230,230,230);}
   audio::-webkit-media-controls-volume-slider-container{display: none;}

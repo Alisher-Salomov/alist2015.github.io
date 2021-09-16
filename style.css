@@ -1,11 +1,11 @@
-﻿* {
+* {
     padding: 0;
     margin: 0;
 }
 
 
 audio {
-     background-color: rgb(230,230,230);}
+     background-color: rgb(230,230,230);
 }
   /*панел аудио*/
 audio::-webkit-media-controls-panel {
@@ -22,7 +22,7 @@ audio::-webkit-media-controls-panel {
 
   /*кнопка пауза*/
   audio::-webkit-media-controls-play-button{
-      background-color: rgb(75, 216, 122);
+      background-color: rgb(255, 255, 255);
   }
   /**/
   audio::-webkit-media-controls-timeline-container{display: none;}

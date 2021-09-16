@@ -5,11 +5,12 @@
 
 
 audio {
-     background-color: rgb(230,230,230);
+    margin-top: 2px;
+     background-color: rgb(230,230,230); width: 99%;
 }
   /*панел аудио*/
 audio::-webkit-media-controls-panel {
-    background-color: rgb(230,230,230);}
+    background-color: rgb(230,230,230); }
   
   /*кнопка громкость*/
   audio::-webkit-media-controls-mute-button{
@@ -20,18 +21,21 @@ audio::-webkit-media-controls-panel {
 }
 
 
+
+
+
   /*кнопка пауза*/
   audio::-webkit-media-controls-play-button{
-      background-color: rgb(255, 255, 255);
+      background-color: inherit; 
   }
   /**/
   audio::-webkit-media-controls-timeline-container{display: none;}
   /*time вакти асли*/
-  audio::-webkit-media-controls-current-time-display{background-color: rgb(230, 230, 230); padding: 5px  0 5px 0;}
+  audio::-webkit-media-controls-current-time-display{background-color: rgb(230, 230, 230); }
   /*time вакти умуми*/
-  audio::-webkit-media-controls-time-remaining-display{background-color: rgb(230,230,230); padding: 5px 0 5px 0;}
+  audio::-webkit-media-controls-time-remaining-display{background-color: rgb(230,230,230);}
   /*панели звук стрелкаи мерафтаги*/
-  audio::-webkit-media-controls-timeline{background-color: rgb(230,230,230); height: 1px;}
+  audio::-webkit-media-controls-timeline{background-color: rgb(230,230,230);}
   audio::-webkit-media-controls-volume-slider-container{display: none;}
   audio::-webkit-media-controls-seek-back-button{display: none;}
   audio::-webkit-media-controls-seek-forward-button{display: none;}
@@ -40,51 +44,6 @@ audio::-webkit-media-controls-panel {
   audio::-webkit-media-controls-return-to-realtime-button{display: none;}
   audio::-webkit-media-controls-toggle-closed-captions-button{display: none;}
 
-
-
-div#timeline1 {
-    
-    height: 5px;
-    width: 70%;
-    background: red;
-    display: block;
-
-}
-
-div#seekObj1 {
-    width: 5px;
-    height: 5px;
-    background: #ffff;
-    border-radius: 50%;
-}
-li{list-style: none;}
-.track-title{
-    text-align: center;
-    font-size: 25px;
-    color: blue;
-}
-#seekObjContainer{align-content: center;}
-.play-pause{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 3px;
-    width: 10px;
-    height: 10px;
-}
-.start-time{
-    margin-left: 30px;    
-
-}
-.end-time{
-    margin-left: 30px;
-}
-
-
-
-
 .container {
     padding: 0;
     margin: 0;
@@ -92,21 +51,11 @@ li{list-style: none;}
 
 }
 
-.head {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    color: aliceblue;
-    font-size: 20px;
-    text-align: center;
-}
 
 .audio {
     width: 90%;
-    height: 100px;
     padding: 3px;
     margin-top: 5px;
-
     border: 1px solid black;
     border-radius: 2px;
 }
@@ -115,9 +64,8 @@ li{list-style: none;}
     text-align: center;
 
 }
-
-
 .navigation {
+    padding: 0 5px 0 5px;
     display: flex;
     justify-content: flex-start;
     align-content: center;

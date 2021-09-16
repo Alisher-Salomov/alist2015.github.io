@@ -12,7 +12,6 @@ audio::-webkit-media-controls-panel {
     background-color: rgb(230,230,230);}
   
   /*кнопка громкость*/
-
   audio::-webkit-media-controls-mute-button{
       display: none;
   }
@@ -32,7 +31,7 @@ audio::-webkit-media-controls-panel {
   /*time вакти умуми*/
   audio::-webkit-media-controls-time-remaining-display{background-color: rgb(230,230,230); padding: 5px 0 5px 0;}
   /*панели звук стрелкаи мерафтаги*/
-  audio::-webkit-media-controls-timeline{background-color: rgb(230,230,230);}
+  audio::-webkit-media-controls-timeline{background-color: rgb(230,230,230); height: 1px;}
   audio::-webkit-media-controls-volume-slider-container{display: none;}
   audio::-webkit-media-controls-seek-back-button{display: none;}
   audio::-webkit-media-controls-seek-forward-button{display: none;}

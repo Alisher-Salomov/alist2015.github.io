@@ -13,137 +13,62 @@
 
 <body>
  <div class="container">
-     <a href="test/index.html">test</a>
-        <div class="audio">
-            <h4 class="title">Аз_ҳад_гузаштагон</h4>
-            <audio src="sourse/Аз_ҳад_гузаштагон.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Аз_ҳиҷрат_боз_мондагон</h4>
-            <audio src="sourse/Аз_ҳиҷрат_боз_мондагон.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Азамату_қудрати_парвардигор</h4>
-            <audio src="sourse/Азамату_қудрати_парвардигор.m4a" controls></audio>
-        </div>
-
-
-        <div class="audio">
-            <h4 class="title">Азоби_мунофиқон</h4>
-            <audio src="sourse/Азоби_мунофиқон.m4a" controls></audio>
-        </div>
-
-
-        <div class="audio">
-            <h4 class="title">Азоби_умати_мусо</h4>
-            <audio src="sourse/Азоби_умати_мусо.m4a" controls></audio>
-        </div>
-
-
-        <div class="audio">
-            <h4 class="title">Амал_ва_подош</h4>
-            <audio src="sourse/Амал_ва_подош.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Амали_зишт_ва_амр</h4>
-            <audio src="sourse/Амали_зишт_ва_амр.m4a" controls></audio>
-        </div>
-        <div class="audio">
-            <h4 class="title">Амали_зоеъ_шуда</h4>
-            <audio src="sourse/Амали_зоеъ_шуда.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Амали_ҳабата</h4>
-            <audio src="sourse/Амали_ҳабата.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Амонат_диҳии_шаръи</h4>
-            <audio src="sourse/Амонат_диҳии_шаръи.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Амонати_парвардигор</h4>
-            <audio src="sourse/Амонати_парвардигор.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Асири_ғафлат</h4>
-            <audio src="sourse/Асири_ғафлат.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Асирони_ғозои_бадр</h4>
-            <audio src="sourse/Асирони_ғозои_бадр.m4a" controls></audio>
-        </div>
-
-
-        <div class="audio">
-            <h4 class="title">Асо_ва_фиръавн</h4>
-            <audio src="sourse/Асо_ва_фиръавн.m4a" controls></audio>
-        </div>
-
-
-        <div class="audio">
-            <h4 class="title">Асҳоби_каҳф</h4>
-            <audio src="sourse/Асҳоби_каҳф.m4a" controls></audio>
-        </div>
-
-        <div class="audio">
-            <h4 class="title">Аҳамияти_намоз</h4>
-            <audio src="sourse/Аҳамияти_намоз.m4a" controls></audio>
-        </div>
-        <div class="audio">
-            <h4 class="title">Аҳднома_ва_хиёнат</h4>
-            <audio src="sourse/Аҳднома_ва_хиёнат.m4a" controls></audio>
-        </div>
-        <div class="audio">
-            <h4 class="title">Аҳли_мантиқ</h4>
-            <audio src="sourse/Аҳли_мантиқ.m4a" controls></audio>
-        </div>
-
-            <ul class="navigation">
-                <li><a href="index.html"><<<</a></li>
-                <li><a href="index.html"><</a></li>
-                <li><a href="">А</a></li>
-                <li><a href="">Б</a></li>
-                <li><a href="">В</a></li>
-                <li><a href="">Г</a></li>
-                <li><a href="">Д</a></li>
-                <li><a href="">Е</a></li>
-                <li><a href="">З</a></li>
-                <li><a href="">И</a></li>
-                <li><a href="">К</a></li>
-                <li><a href="">Л</a></li>
-                <li><a href="">М</a></li>
-                <li><a href="">Н</a></li>
-                <li><a href="">О</a></li>
-                <li><a href="">П</a></li>
-                <li><a href="">Р</a></li>
-                <li><a href="">С</a></li>
-                <li><a href="">Т</a></li>
-                <li><a href="">У</a></li>
-                <li><a href="">Ф</a></li>
-                <li><a href="">Х</a></li>
-                <li><a href="">Ч</a></li>
-                <li><a href="">Э</a></li>
-                <li><a href="">></a></li>
-                <li><a href="#">>>></a></li>
-            </ul>
-
-
-
-
-
-
+        
+     <a href="test/index.html" id="text" style="size:28px; text-decoration:none; display: flex;align-content: center;justify-content: center;flex-wrap: nowrap;align-items: center; height: 100%;">Оғоз<a>
 
     </div>
 </body>
 
+<script>
+    
+var base_color="#110A53"
+var color1="red"
+var color2="green"
+var flashspeed=150
+var flashingletters=2
+var flashingletters2=2
+var flashpause=0
+var n=0
+var color_text=""
+message=document.getElementById("text").innerHTML;
+if (document.all||document.getElementById){
+    color_text='<div align="center"><font color="'+base_color+'" size="44">';
+    for (m=0; m<message.length; m++) color_text+='<span id="neonlight'+m+'">'+message.charAt(m)+'</span>'
+    color_text+='</font></div>'
+    document.getElementById("text").innerHTML = color_text
+}
+else document.getElementById("text").innerHTML = message
 
+
+function crossref(number){
+    var crossobj=document.all? eval("document.all.neonlight"+number) :
+    document.getElementById("neonlight"+number)
+    return crossobj
+}
+
+function neon(){
+    if (n==0){
+     for (m=0;m<message.length;m++)
+     crossref(m).style.color=base_color
+     }
+    crossref(n).style.color=color1
+    if (n>flashingletters-1) { crossref(n-flashingletters).style.color=color2 }
+    if (n>(flashingletters+flashingletters2)-1) {
+    crossref(n-flashingletters-flashingletters2).style.color=base_color }
+    if (n<message.length-1) { n++ }
+    else {
+     n=0
+     clearInterval(flashing)
+     setTimeout("start_color()",flashpause)
+     return
+     }
+}
+function start_color(){
+    if (document.all||document.getElementById)
+    flashing=setInterval("neon()",flashspeed)
+}
+start_color()
+
+    </script>
 
 </html>
